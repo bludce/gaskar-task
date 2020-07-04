@@ -8,22 +8,22 @@ const Sidebar = () => (
     <img src="" alt="" className="logo"/>
     <ul className="sidebar-menu">
       <li className="sidebar-menu__item">
-        <NavLink exact={true} to="/tasks" activeClassName="is-active">
+        <NavLink to="/tasks" activeClassName="is-active">
           Задачи и работы
         </NavLink>
       </li>
       <li className="sidebar-menu__item">
-        <NavLink exact={true} to="/projects" activeClassName="is-active">
+        <NavLink to="/projects" activeClassName="is-active">
           Проекты
         </NavLink>
       </li>
       <li className="sidebar-menu__item">
-        <NavLink exact={true} to="/calenadar" activeClassName="is-active">
+        <NavLink to="/calendar" activeClassName="is-active">
           Календарь
         </NavLink>
       </li>
       <li className="sidebar-menu__item">
-        <NavLink exact={true} to="/opportunities" activeClassName="is-active">
+        <NavLink to="/opportunities" activeClassName="is-active">
           Возможности
         </NavLink>
       </li>
