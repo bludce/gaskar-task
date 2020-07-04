@@ -8,16 +8,14 @@ const ProjectList = ({ title, projectList }) => (
   <div className="projects">
     <h1 className="projects__title" >{title}</h1>
     <div className="projects__wrap">
-      {projectList.map(({ id, title, start, end, manager, admin, stage, category }) => (
+      {projectList.map(({ id, title, start, end, manager, admin }) => (
         <ProjectItem 
           key={id} 
           title={title} 
           start={start} 
           end={end} 
           manager={manager} 
-          admin={admin} 
-          stage={stage} 
-          category={category} />
+          admin={admin}  />
       ))}
     </div>
   </div>
