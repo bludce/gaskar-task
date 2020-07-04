@@ -6,6 +6,7 @@ import './index.sass';
 
 import Sidebar from './components/Sidebar/sidebar'
 import Header from './components/Header/header'
+import NotFound from './components/NotFound/notFound'
 
 class App extends PureComponent {
 
@@ -29,7 +30,7 @@ class App extends PureComponent {
               <Route path="/projects" render={
                 ()=><Main title="Проекты" />
               }/>
-              {/* <Route component={NotFound} /> */}
+              <Route component={NotFound} />
             </div>
           </div>
         </div>
