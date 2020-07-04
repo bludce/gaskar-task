@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import './index.sass';
 
 import Sidebar from './components/Sidebar/sidebar'
+import Header from './components/Header/header'
 
 class App extends PureComponent {
 
@@ -23,7 +24,7 @@ class App extends PureComponent {
         <div className="app">
           <Sidebar />
           <div className="main">
-            {/* <Header /> */}
+            <Header />
             <div className="main-wrapper">
               <Route path="/projects" render={
                 ()=><Main title="Проекты" />
