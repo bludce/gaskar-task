@@ -20,7 +20,7 @@ const NotFound = () => (
       <div className="error__title">
         Упс, страница не найдена
       </div>
-      <Link to="/" className="error__btn">Вернутьтся на главную</Link>
+      <Link to="/" className="error__btn">Вернуться на главную</Link>
     </div>
   </div>
 );
