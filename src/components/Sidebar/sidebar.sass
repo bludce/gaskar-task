@@ -1,0 +1,29 @@
+.sidebar
+  background-color: #37186e
+  height: 100vh
+  width: 300px
+  
+.sidebar-menu
+  list-style-type: none
+  margin: 0
+  padding: 50px 0
+  font-size: 16px
+  font-weight: 700
+  &__item
+    position: relative
+    & a
+      color: #fff
+      text-decoration: none
+      padding: 15px 50px
+      display: block
+      transition: all .3s ease
+      background-image: url(../../assets/img/squares.png)
+      background-repeat: no-repeat
+      background-position: 20px 50%
+      background-size: 17px
+      border-left: 10px solid transparent
+      &:hover
+        background-color: #200a48 
+      &.is-active      
+        background-color: #200a48
+        border-color: #b331cb

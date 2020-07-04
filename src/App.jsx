@@ -1,7 +1,10 @@
 import React, { PureComponent } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import './index.sass';
+
+import Sidebar from './components/Sidebar/sidebar'
 
 class App extends PureComponent {
 
@@ -16,9 +19,19 @@ class App extends PureComponent {
   render() {
 
     return (
-
       <BrowserRouter>
-        <h1>Hello world</h1>
+        <div className="app">
+          <Sidebar />
+          <div className="main">
+            {/* <Header /> */}
+            <div className="main-wrapper">
+              <Route path="/projects" render={
+                ()=><Main title="Проекты" />
+              }/>
+              {/* <Route component={NotFound} /> */}
+            </div>
+          </div>
+        </div>
       </BrowserRouter>
     );
   }
