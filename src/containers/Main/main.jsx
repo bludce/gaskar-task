@@ -15,7 +15,7 @@ class Main extends Component {
   render () {
     const path = location.pathname;
     const { projects } = this.props
-    console.log(projects)
+
     return (
       <div className="content">
         <h1 className="content__title" >{this.props.title}</h1>
@@ -28,8 +28,6 @@ class Main extends Component {
             <Route exact path={`${path}`} render={
               ()=><ProjectList title="Список проектов" projectList={projects} />
             }/>
-            <Route path={`${path}?road`} exact />
-
           </Switch>
         </div>
       </div>
