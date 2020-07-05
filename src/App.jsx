@@ -7,7 +7,7 @@ import {setAuth} from './actions/userAction'
 import './index.sass';
 
 import Sidebar from './components/Sidebar/sidebar'
-import Header from './components/Header/header'
+import Header from './containers/Header/header'
 import NotFound from './components/NotFound/notFound'
 import Main from './containers/Main/main'
 import Login from './components/Login/login'
