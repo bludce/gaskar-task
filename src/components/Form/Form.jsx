@@ -23,9 +23,12 @@ class Form extends Component {
   }
 
   handleSubmit = (e) => {
-    const {title, start, end, manager, admin} = this.state
     e.preventDefault()
-    this.props.addProject((new Date()).getTime(), title, start, end, manager, admin)
+    const {title, start, end, manager, admin} = this.state
+    const formatStart = start.split('-').reverse().join('.')
+    const formatEnd = end.split('-').reverse().join('.')
+    
+    this.props.addProject((new Date()).getTime(), title, formatStart, formatEnd, manager, admin)
     this.props.onClose()
   }
 
